@@ -1,0 +1,221 @@
+body{
+    margin: 0%;
+    background-color: rgb(234, 255, 236);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+input{
+    font-size: medium;
+}
+
+.header{
+    background-color: #3b8a3f;
+    width: 100%;
+    height: 7.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.image{
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+img{
+    text-align: center;
+    width: 80%;
+}
+
+.header h1{
+    padding-top: 1%;
+    margin-bottom: 0%;
+    margin-left: 1%;
+    font-size: 40px;
+}
+
+nav{
+    font-weight: bold;
+}
+
+nav p{
+    margin-top: 0;
+    float: left;
+    margin-left: 1%;
+    font-size: 25px;
+}
+
+.login{
+    float: right;
+    text-decoration: none;
+    margin-right: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+  
+p.success{
+    color: #45a049;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+div.signees-body {
+    padding: 20px;
+}
+
+p.error {
+    color: red;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.add-examtime {
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+form.signup {
+    padding: 20px;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-examtime input[type="datetime-local"] {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: large;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+div.time-search{
+    width: 60%;
+    margin: auto;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form label {
+    margin: 0 0 8px 0;
+    display: block;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.examtimes {
+    width: 50%;
+    margin: 20px auto;
+    margin-top: 0;
+}
+
+table.signees {
+    width: 60%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+table th{
+    background-color: #428145;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: large;
+}
+
+table td {
+    border: 1px solid #ccc;
+    background-color: aliceblue;
+    padding: 12px 20px;
+    font-size: large;
+}
+
+@media all and (orientation:portrait) {
+    nav p{
+        font-size: 28px
+    }
+    .header h1{
+        font-size: 40px;
+        padding-bottom: 0%;
+    }
+    form label{
+        font-size: large;
+    }
+    form.signup{
+        transform-origin: top;
+        transform: scale(1.5);
+    }
+    .time-search{
+        transform-origin: top;
+        transform: scale(1.5);
+    }
+    .signees{
+        margin-top: 2rem;
+        transform-origin: top;
+        transform: scale(1.5);
+    }
+    select{
+        font-size: large;
+    }
+    th{
+        font-size: large;
+    }
+    td{
+        font-size: large;
+    }
+    .add-examtime{
+        transform-origin: top;
+        transform: scale(1.5);
+    }
+    .examtimes{
+        margin-top: 3rem;
+        transform-origin: top;
+        transform: scale(1.5);
+    }
+    input{
+        font-size: larger;
+    }
+}
