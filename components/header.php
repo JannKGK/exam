@@ -12,7 +12,7 @@
 
     if(isset($_POST['logout-submit'])){
         $_SESSION['logged_in'] = false;
-        header('Location: http://82.147.185.212/exam');
+        header('Location: http://82.147.181.75/exam');
         die();
     }
 ?>
@@ -23,18 +23,18 @@
                 <p><input id="logout-submit" type="submit" name="logout-submit" style="display: none"></p>
             </form>
     <nav>     
-        <p><a href="http://82.147.185.212/exam/">Home</a></p>
-        <p><a href="http://82.147.185.212/exam/pages/signup.php">Sign up</a></p>
+        <p><a href="http://82.147.181.75/exam/">Home</a></p>
+        <p><a href="http://82.147.181.75/exam/pages/signup.php">Sign up</a></p>
         <?php
         if($_SESSION['logged_in']){
             echo '
-            <p><a href="http://82.147.185.212/exam/pages/signees.php">Signees</a></p>
-            <p><a href="http://82.147.185.212/exam/pages/examtimes.php">Exam times</a></p>
+            <p><a href="http://82.147.181.75/exam/pages/signees.php">Signees</a></p>
+            <p><a href="http://82.147.181.75/exam/pages/examtimes.php">Exam times</a></p>
             <p class="login"><a href="#" onclick="document.getElementById(\'logout-submit\').click();">Log out</a></p>
             ';
         }else{
             echo '
-            <p class="login"><a href="http://82.147.185.212/exam/pages/login.php">Login</a></p>
+            <p class="login"><a href="http://82.147.181.75/exam/pages/login.php">Login</a></p>
             ';
         }
         ?>

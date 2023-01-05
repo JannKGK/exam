@@ -38,7 +38,7 @@ if(!isset($_POST['submit'])){
           if(isset($admin['Password'])) {
             if($password == $admin['Password']) {
                 $_SESSION['logged_in'] = true;
-                header('Location: http://82.147.185.212/exam');
+                header('Location: http://82.147.181.75//exam');
                 die();
             } else {
               echo '
