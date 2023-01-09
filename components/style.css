@@ -61,6 +61,7 @@ p.success{
     color: #45a049;
     text-align: center;
     font-weight: bold;
+    font-size: larger;
     margin-top: 20px;
 }
 
@@ -71,7 +72,9 @@ div.signees-body {
 p.error {
     color: red;
     margin: 8px 0;
+    font-weight: bold;
     text-align: center;
+    font-size: larger;
 }
 
 .add-examtime {

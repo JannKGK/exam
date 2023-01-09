@@ -1,6 +1,5 @@
 <head>
     <title>Exam</title>
-    <link rel="icon" type="image/x-icon" href="http://82.147.185.212/exam/assets/favicon.png">
 </head>
 
 <?php 
