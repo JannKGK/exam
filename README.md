@@ -1,7 +1,10 @@
 # exam
 http://82.147.181.75/exam/
 
-SQL statements for creating the database and inserting example values
+# SQL statements for creating the database and inserting example values
+
+create database exam;
+
 create table signees(
     email primary varchar(50),
     fullname varchar(50),
@@ -17,8 +20,8 @@ create table admins(
     Password varchar(50)
 );
 
-insert into admins values('admin','password')
+insert into admins values('admin','password');
 
-insert into exam_times('2023-02-14 06:00:00')
+insert into exam_times('2023-02-14 06:00:00');
 
-insert into signees('example@ex.com','John Doe','2023-02-14 06:00:00')
+insert into signees('example@ex.com','John Doe','2023-02-14 06:00:00');
