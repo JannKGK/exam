@@ -58,7 +58,7 @@ if(isset($_POST['submit'])
         $statement->execute();
         
         echo"
-        <p class='success'>signed up succesfully!</p>
+        <p class='success'>signed up succesfully! confirmation has been sent to your email.</p>
         ";
     } catch(PDOException $error) {
         echo $sql . "<br>" . $error->getMessage();
