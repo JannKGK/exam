@@ -6,18 +6,18 @@ http://82.147.181.75/exam/
 create database exam;
 
 create table signees(
-    email primary varchar(50),
-    fullname varchar(50),
-    exam_time datetime
+    email primary varchar(50) not null,
+    fullname varchar(50) not null,
+    exam_time datetime not null
 );
 
 create table exam_times(
-    Time datetime
+    Time primary datetime not null
 );
 
 create table admins(
-    Username primary varchar(50),
-    Password varchar(50)
+    Username primary varchar(50) not null,
+    Password varchar(50) not null
 );
 
 insert into admins values('admin','password');
