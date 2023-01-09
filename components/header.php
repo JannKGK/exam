@@ -5,10 +5,12 @@
 <?php 
     session_start();
 
+    //log out if button is clicked
     if(!isset($_SESSION['logged_in'])){
         $_SESSION['logged_in'] = false;
     }
 
+    //log out button
     if(isset($_POST['logout-submit'])){
         $_SESSION['logged_in'] = false;
         header('Location: http://82.147.181.75/exam');
@@ -24,6 +26,7 @@
     <nav>     
         <?php
         
+        //check if the user is on index.php and change nav links to fit
         if(basename($_SERVER['PHP_SELF']) == 'index.php'){
             echo '
             <p><a href="">Home</a></p>

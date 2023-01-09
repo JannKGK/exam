@@ -12,10 +12,9 @@
             <option value="">- Choose a time -</option>
             <?php 
 
-            //add exam dates to the select field
-
             require "../components/config.php";
             $connection = new PDO($dsn, $username, $password, $options);
+            //get examtimes from the db
             $sql = 'SELECT Time FROM exam_times';
             $statement = $connection->prepare($sql);
             $statement->execute();
@@ -27,7 +26,8 @@
             //format the date to be more readable
             $date = date_create(date("Y-m-d H:i:s", strtotime($examtime)));
             $formatted_date = date_format($date, "j. F Y, H:i");
-
+            
+            //add examtimes to the select field
             echo "<option value='$examtime'>$formatted_date</option>";
             }
             ?>

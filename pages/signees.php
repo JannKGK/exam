@@ -21,12 +21,12 @@
 
         require "../components/config.php";
         $connection = new PDO($dsn, $username, $password, $options);
+        //get examtimes from the db
         $sql = 'SELECT Time FROM exam_times';
         $statement = $connection->prepare($sql);
         $statement->execute();
         $result = $statement->fetchAll();
 
-        //add the exam dates to the table
         foreach($result as $row) {
         $examtime = $row['Time'];
 
@@ -34,6 +34,7 @@
         $date = date_create(date("Y-m-d H:i:s", strtotime($examtime)));
         $formatted_date = date_format($date, "j. F Y, H:i");
 
+        //add the exam dates to the table
         echo "<option value='$examtime'>$formatted_date</option>";
         }
         ?>
