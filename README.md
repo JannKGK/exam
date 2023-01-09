@@ -1,7 +1,7 @@
 # exam
 http://82.147.181.75/exam/
 
-# SQL statements for creating the database and inserting example values
+## SQL statements for creating the database and inserting example values
 
 create database exam;
 
